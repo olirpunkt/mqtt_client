@@ -117,23 +117,5 @@ void loop() {
   }
   client.loop();
 
-  //snprintf(msg, 50, "Alive since %ld milliseconds", millis());
-  //Serial.print("Publish message: ");
-  //Serial.println(msg);
-  //client.publish("/home/garage", msg);
-
-  /*if (digitalRead(pinStatusGarageDoor) == LOW) {
-    Serial.println("Closed");
-    snprintf(msg, 50, "{\"status\":\"closed\"}");
-    Serial.println(msg);
-    client.publish("/home/garage/door", msg);
-  }
-  else {
-    Serial.println("open");
-    snprintf(msg, 50, "{\"status\":\"open\"}");
-    client.publish("/home/garage/door", msg);
-    Serial.println(msg);
-  }*/
-  
   delay(1000);
 }
